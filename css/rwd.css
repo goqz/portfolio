@@ -1,0 +1,36 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-widget img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mainPage {
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    #mainFoto {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #mainFoto img {
+        margin: 3vh auto;
+    }
+
+    .bg-block {
+        position: fixed;
+        z-index: -1;
+        height: 200%;
+        width: 100%;
+        transform: rotate(-55deg);
+        left: -85%;
+        top: -15%;
+        background-color: #ffb400;
+    }
+
+    #welcome {
+        padding-top: 3vh;
+    }
+}

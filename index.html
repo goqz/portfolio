@@ -2,19 +2,20 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>ZW's Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/1e4a3ecab8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rwd.css">
 </head>
 <body>
     <div class="container-fluid" id="mainContainer">
         <div class="bg-block"></div>
-        <div class="row" id="mainPage">
+        <div class="row mainPage" data-id="1" id="welcome">
             <div class="col-10">
                 <div class="row">
                     <div class="col-lg-6 col-12" id="mainFoto">
@@ -28,23 +29,101 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2" id="mainMenu">
-                <ul class="menu">
-                    <li class="menu-item menu-item-active">
-                        <i class="fas fa-home"></i>
-                    </li>
-                    <li class="menu-item">
-                        <i class="fas fa-user"></i>
-                    </li>
-                    <li class="menu-item">
-                        <i class="fas fa-briefcase"></i>
-                    </li>
-                    <li class="menu-item">
-                        <i class="fas fa-at"></i>
-                    </li>
-                </ul>
+        </div>
+        <div class="row mainPage" data-id="2" id="work">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <h1>D<span class="color-text">oświadczenie</span> Z<span class="color-text">awodowe</span></h1>
+
+                        <p>W latach 2010-2020 aktywnie zajmowałem się front-endem, a także częściowo back-endem (głównie proste zmiany/funkcje/wtyczki w Wordpress, PrestaShop oraz małe, proste projekty w Symfony). Na początku tworzyłem samodzielne strony www z wykorzystaniem PHP i MySQL, następnie dużo bardziej aktywnie przerzuciłem się na Wordpress, zajmując się przede wszystkim tworzeniem motywów dla klientów indywidualnych.</p>
+                        <p>W 2012 roku rozpocząłem studia na kierunku Informatyka na Uniwersytecie Śląskim w Katowicach. Studiując dziennie pracowałem jednocześnie w hurtowni Wenecja, w której zajmowałem się sklepem internetowym, również całą warstwą wizualną. W pewnym momencie niestety zamknięto budynek, w którym pracowałem, w związku z czym straciłem pracę, która dawała mi dużą elastyczność w dostosowaniu do grafiku studiów. Następnie sytuacja materialna zmusiła mnie do wyjazdu za granicę, planowo krótkiego, niestety na studia nigdy nie wróciłem i przerwałem je ostatecznie w trakcie trzeciego roku.</p>
+                        <p>Na przełomie 2019 i 2020 ostatecznie przestałem zajmować się front-endem, ponieważ głównie przebywałem za granicą, w 2023 roku jednak postanowiłem odświeżyć wiedzę, zapoznać się z nowościami i spróbować wrócić do branży. Efektem jest ta strona internetowa i projekty, które znajdziesz w dalszej jej części - wraz z linkami do GitHuba.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="row mainPage" data-id="2">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <h1>C<span class="color-text">V</span></h1>
+                        
+                        <p>
+                            <span class="cv-date">Lata 2017-2023 - praca za granicą w branży turystycznej:</span><br>
+                        </p>
+                        <p>
+                            <span class="cv-date">2023</span> Go Senja Laukvik Fiskecamp <i>(Laukvik, Norwegia)</i><br>
+                            <span class="cv-date">2021-23</span> The Alpina Resort <i>(Tschiertschen, Szwajcaria)</i><br>
+                            <span class="cv-date">2022</span> Hotel Soma <i>(Ilulissat, Grenlandia)</i><br>
+                            <span class="cv-date">2020-21</span> Volcano Huts <i>(Husadalur, Islandia)</i><br>
+                            <span class="cv-date">2019</span> Eyjar Fishing Lodge <i>(Breiddalsvik, Islandia)</i><br>
+                            <span class="cv-date">2018</span> Volcano Hotel <i>(Vik, Islandia)</i><br>
+                            <span class="cv-date">2017</span> Solheimahjaleiga <i>(Vik, Islandia)</i><br>
+                        </p>
+
+                        <p>
+                            <span class="cv-date">Lata 2011-2015 - Polska</span><br>
+                        </p>
+                        <p>
+                            <span class="cv-date">2015-17</span> Venturo Finance, własna działalność, kredyty gotówkowe</i><br>
+                            <span class="cv-date">2012-15</span> Wenecja.pl, praca podczas studiów, zarządzanie sklepem internetowym i aukcjami Allegro</i><br>
+                            <span class="cv-date">2010-17</span> Strony internetowe, głównie wizytówki dla firm, od zera lub w oparciu o Wordpress</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mainPage" data-id="3" id="projects">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <h1>P<span class="color-text">rojekty</span></h1>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mainPage" data-id="4" id="contact">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <h1>K<span class="color-text">ontakt</span></h1>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainMenu">
+            <ul class="menu">
+                <li class="menu-item menu-item-active">
+                    <a href="#welcome"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#work"><i class="fas fa-user"></i></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#projects"><i class="fas fa-briefcase"></i></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contact"><i class="fas fa-at"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1e4a3ecab8.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
