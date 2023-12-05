@@ -24,14 +24,14 @@
         z-index: -1;
         height: 200%;
         width: 100%;
-        transform: rotate(-55deg);
+        transform: rotate(-65deg);
         left: -85%;
-        top: -15%;
+        top: 0%;
         background-color: #ffb400;
     }
 
     #welcome {
-        padding-top: 3vh;
+        padding-top: 6vh;
     }
 
     /* Menu goes to top in mobile version */
@@ -71,5 +71,35 @@
 
     .menu-item-active {
         background-color: #ffb400;
+    }
+
+    /* Projects */
+
+    .project-window {
+        width: 80%;
+        height: 70%;
+        padding: 3vh 5vw;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: #111;
+    }
+
+    .project-window-close {
+        position: absolute;
+        right: 5vw;
+        top: 3vh;
+        cursor: pointer;
+    }
+
+    /* Contact */
+    
+    .contact-list {
+        list-style-type: none;
+        font-size: 1.1em;
+        margin-top: 10vh;
+        padding-left: 0;
     }
 }

@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <script src="https://kit.fontawesome.com/a33abd3291.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/rwd.css">
 </head>
@@ -24,8 +26,8 @@
                     <div class="col-lg-6 col-12" id="mainText">
                         <p class="text-uppercase">Cześć! Nazywam się</p>
                         <h1>Z<span class="color-text">bigniew</span> W<span class="color-text">yrozumski</span></h1>
-                        <p>I od pewnego czasu hobbystycznie zajmuję się tworzeniem stron internetowych - głównie małych projektów, w których większość pracy to front-end, ale znam również podstawy PHP jak i frameworków takich jak Symfony, czy baz MySQL. Dużo pracuję również w oparciu o Wordpress. Na stronie znajdziesz moje projekty a także linki do GitHuba.</p>
-                        <button class="btn btn-color">Więcej</button>
+                        <p>Kilka lat temu zajmowałem się front-endem pracując w sklepie internetowym ogólnopolskiej hurtowni odzieżowej, a także tworząc małe strony-wizytówki dla małych firm. W ostatnim czasie odświeżam wiedzę i tworzę nowe rzeczy, które możesz obejrzeć klikając w poniższy przycisk, albo możesz przeczytać więcej nt. mojego życiorysu, scrollując do kolejnej sekcji. Dzięki za wizytę na mojej małej stronie!</p>
+                        <a class="btn btn-color" href="#projects">Projekty</a>
                     </div>
                 </div>
             </div>
@@ -39,8 +41,14 @@
                         <h1>D<span class="color-text">oświadczenie</span> Z<span class="color-text">awodowe</span></h1>
 
                         <p>W latach 2010-2020 aktywnie zajmowałem się front-endem, a także częściowo back-endem (głównie proste zmiany/funkcje/wtyczki w Wordpress, PrestaShop oraz małe, proste projekty w Symfony). Na początku tworzyłem samodzielne strony www z wykorzystaniem PHP i MySQL, następnie dużo bardziej aktywnie przerzuciłem się na Wordpress, zajmując się przede wszystkim tworzeniem motywów dla klientów indywidualnych.</p>
+
                         <p>W 2012 roku rozpocząłem studia na kierunku Informatyka na Uniwersytecie Śląskim w Katowicach. Studiując dziennie pracowałem jednocześnie w hurtowni Wenecja, w której zajmowałem się sklepem internetowym, również całą warstwą wizualną. W pewnym momencie niestety zamknięto budynek, w którym pracowałem, w związku z czym straciłem pracę, która dawała mi dużą elastyczność w dostosowaniu do grafiku studiów. Następnie sytuacja materialna zmusiła mnie do wyjazdu za granicę, planowo krótkiego, niestety na studia nigdy nie wróciłem i przerwałem je ostatecznie w trakcie trzeciego roku.</p>
+
                         <p>Na przełomie 2019 i 2020 ostatecznie przestałem zajmować się front-endem, ponieważ głównie przebywałem za granicą, w 2023 roku jednak postanowiłem odświeżyć wiedzę, zapoznać się z nowościami i spróbować wrócić do branży. Efektem jest ta strona internetowa i projekty, które znajdziesz w dalszej jej części - wraz z linkami do GitHuba.</p>
+
+                        <p>Mimo, że pracowałem poza branżą IT w ostatnich latach, to zawsze byłem sumienny i chętnie wnosiłem do firmy wartość dodaną, jeśli miałem taką możliwość - np. robiąc zdjęcia czy pomagając z różnymi sprawami związanymi z elektroniką. Poniżej znajdziesz referencje z mojej ostatniej posady w Szwajcarii - na życzenie mogę okazać również polecenia od innych pracodawców.</p>
+
+                        <a class="btn btn-color" href="referencje.pdf">Referencje</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +94,149 @@
                     <div class="col-lg-8 col-12">
                         <h1>P<span class="color-text">rojekty</span></h1>
                         
-                        
+                        <div class="project">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Konwerter walut</h3> 
+                                </div>
+                                <div class="col-4">
+                                    <p>
+                                        <span class="project-technology">JS</span>
+                                        <span class="project-technology">CSS</span>
+                                        <span class="project-technology">HTML</span>
+                                        <span class="project-technology">API</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Dynamiczny konwerter walut wykorzystujący API firmy freecurrencyapi.com.
+                            </p>
+                            
+                            <button class="project-link btn btn-color" data-id="1">więcej</a>
+                        </div>
+                        <div class="project-window-outer project-not-active" data-id="1">
+                            <div class="project-window">
+                                <div class="col-12">
+                                    <i class="fa-regular fa-circle-xmark project-window-close" data-id="1"></i>
+                                    <h1 class="project-title">Konwerter walut</h1>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        <span class="project-technology">JS</span>
+                                        <span class="project-technology">CSS</span>
+                                        <span class="project-technology">HTML</span>
+                                        <span class="project-technology">API</span>
+                                    </p>
+                                </div>
+                                <div class="project-window-content col-12">
+                                    <p>Projekt napisany w całości od zera bez użycia zewnętrznych bibliotek typu Bootstrap czy frameworków JS - jedynie do obsługi API użyłem axiosa, bo natknąłem się na niego w którymś z kursów i wydał mi się bardzo wygodny.</p>
+
+                                    <p>Aplikacja to prosty box na środku strony z dwiema funkcjami - jedną jest przeliczanie jednej waluty na drugą do wyboru z dwóch dostępnych list, a druga funkcja to wyświetlenie równowartości kwoty wybranej waluty w tabeli z 15 innymi walutami. Wartości generowane są dynamicznie w trakcie wpisywania kwoty w podanym polu czy podczas zmiany waluty. Starałem się dopracować wygodę użytkowania dodając rozwijalną listę z walutami, w której można wyszukiwać i którą można również obsługiwać za pomocą klawiatury (strzałki + klawisz enter).</p>
+
+                                    <p>W trakcie budowy kilka razy zmieniałem koncepcję - na początku wywołanie następowało jedynie po kliknięciu strzałki na środku, następnie dobudowałem funkcjonalność z tabelą walut, do której było nowe, osobne pole. Po chwili zorientowałem się jednak, że można z powodzeniem wykorzystać istniejące już inputy, przebudowałem więc kod tak, by tabela generowała się w momencie wypełniania pierwszego inputa.</p>
+
+                                    <p>Narzędzie jest proste i nieskomplikowane, ale działa dobrze zarówno na komputerach, jak i na telefonach. <span class="bolded">Proszę o wyrozumiałość przy testowaniu - API pozwala jedynie na 10 zapytań na minutę :)</span></p>
+                                </div>
+                                <div class="col-12">
+                                    <a class="btn btn-color project-link" href="https://zbigniewwu.pl/apps/currencyApp/" target="_blank">aplikacja online</a>
+                                    <a class="btn btn-color project-link" href="https://github.com/goqz/currencyApp/" target="_blank">gitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Szablon strony dla firmy multimedialnej</h3> 
+                                </div>
+                                <div class="col-4">
+                                    <p>
+                                        <span class="project-technology">CSS</span>
+                                        <span class="project-technology">HTML</span>
+                                        <span class="project-technology">JS</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Szablon wykonany od zera w HTML i CSS z wykorzystaniem bootstrap i jQuery.
+                            </p>
+                            
+                            <button class="project-link btn btn-color" data-id="2">więcej</a>
+                        </div>
+                        <div class="project-window-outer project-not-active" data-id="2">
+                            <div class="project-window">
+                                <div class="col-12">
+                                    <i class="fa-regular fa-circle-xmark project-window-close" data-id="2"></i>
+                                    <h1 class="project-title">Szablon strony dla firmy multimedialnej</h1>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        <span class="project-technology">CSS</span>
+                                        <span class="project-technology">HTML</span>
+                                        <span class="project-technology">JS</span>
+                                    </p>
+                                </div>
+                                <div class="project-window-content col-12">
+                                    <p>Zwykły szablon wykonany w HTML, CSS i z odrobiną JS w celu poćwiczenia budowania responsywnych stron internetowych. Całość stworzyłem samodzielnie korzystając z bibliotek Bootstrap oraz jQuery. Inspirowałem się znalezionymi w internecie szablonami na sprzedaż o podobnej tematyce, ale kolorystykę dobierałem samodzielnie, tak samo jak logo, które zrobiłem korzystając z Photoshopa.</p>
+
+                                    <p>Desing jest prosty, z szablonem szerokim na cały ekran, głównie pracowałem z CSS i HTML, a JS jest tylko dodatkiem do małych elementów w navBarze - efekt przezroczystości i rozszerzenia paska nawigacyjnego, gdy strona jest przescrollowana na samą górę.</p>
+                                </div>
+                                <div class="col-12">
+                                    <a class="btn btn-color project-link" href="https://zbigniewwu.pl/apps/projekt-01/" target="_blank">podgląd online</a>
+                                    <a class="btn btn-color project-link" href="https://github.com/goqz/projekt-01/" target="_blank">gitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Portfolio</h3> 
+                                </div>
+                                <div class="col-4">
+                                    <p>
+                                        <span class="project-technology">CSS</span>
+                                        <span class="project-technology">HTML</span>
+                                        <span class="project-technology">JS</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Portfolio zbudowałem wykorzystając technologię bootstrap oraz czysty JS.
+                            </p>
+                            
+                            <button class="project-link btn btn-color" data-id="3">więcej</a>
+                        </div>
+                        <div class="project-window-outer project-not-active" data-id="3">
+                            <div class="project-window">
+                                <div class="col-12">
+                                    <i class="fa-regular fa-circle-xmark project-window-close" data-id="3"></i>
+                                    <h1 class="project-title">Portfolio</h1>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        <span class="project-technology">CSS</span>
+                                        <span class="project-technology">HTML</span>
+                                        <span class="project-technology">JS</span>
+                                    </p>
+                                </div>
+                                <div class="project-window-content col-12">
+                                    <p>
+                                        Zależało mi na nieskomplikowanym, ale estetycznym portfolio, które nie będzie przekombinowane, ale zawrze wszystkie potrzebne informacje. Do wsparcia w CSS wykorzystałem bootstrap, ale JS napisałem samodzielnie - zmiana kolorów w menu wraz ze scrollowaniem, czy pojawiające się okienka z projektami, które można zamknąć kliknięciem czy klawiszem ESC. Małe dodatki, dodające stronie dynamiczności i estetyki.
+                                    </p>
+
+                                    <p>
+                                        Cały kod portfolio dostępny jest, tak jak reszta projektów, na moim githubie :)
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <a class="btn btn-color project-link" href="https://github.com/goqz/portfolio/" target="_blank">gitHub</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,7 +249,15 @@
                     <div class="col-lg-8 col-12">
                         <h1>K<span class="color-text">ontakt</span></h1>
                         
-                        
+                        <p>
+                            Zapraszam do kontaktu przez telefon, e-mail czy WhatsApp:
+                        </p>
+                        <ul class="contact-list">
+                            <li><i class="fa-solid fa-phone"></i> +48 790 243 264</li>
+                            <li><i class="fa-solid fa-at"></i> z.wyrozumski@gmail.com</li>
+                            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/goqz" target="_blank">github.com/goqz</a></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
             </div>

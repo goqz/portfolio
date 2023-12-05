@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -38,7 +42,6 @@ a:hover, a:active {
 }
 
 .mainPage {
-    width: 100%;
     min-height: 100%;
     height: 100%;
     display: flex;
@@ -49,7 +52,7 @@ a:hover, a:active {
     width: 75%;
     height: auto;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 50%;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(17,17,17,1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(17,17,17,1);
     box-shadow: 0px 0px 10px 0px rgba(17,17,17,1);
@@ -95,6 +98,18 @@ a:hover, a:active {
     font-weight: 700;
 }
 
+.btn-color:hover {
+    border: 1px solid #ffb400;
+}
+
+.project-link {
+    border-radius: 26px;
+    text-transform: lowercase;
+    color: #fff;
+    padding: 6px 13px;
+    font-weight: 700;
+}
+
 .menu-item {
     width: 50px;
     height: 50px;
@@ -111,5 +126,94 @@ a:hover, a:active {
 
 .menu-item-active {
     background-color: #ffb400;
+}
 
+/* Projects windows */
+
+.project {
+    padding-top: 40px;
+}
+
+.project > p {
+    font-size: .8em;
+}
+
+.project div.col-4 {
+    padding-top: 5px;
+    text-align: right;
+}
+
+.project-technology {
+    color: #ffb400;
+    border: 1px solid #ffb400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 1px 4px;
+}
+
+.project-not-active {
+    display: none;
+}
+
+.project-window-outer {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(17,17,17,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.project-window {
+    width: 80%;
+    max-height: 80vh;
+    padding: 5vh 3vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.project-window-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.project-window-close {
+    position: absolute;
+    font-size: 1.6em;
+    right: 3vw;
+    top: 5vh;
+    cursor: pointer;
+}
+
+.project-title {
+    max-width: 80%;
+}
+
+.project-link {
+    margin-top: 25px;
+}
+
+/* Contact form */
+
+.contact-list {
+    list-style-type: none;
+    font-size: 1.4em;
+    margin-top: 10vh;
+    padding-left: 0;
+}
+
+.contact-list li i {
+    color: #ffb400;
+    margin-right: 15px;
+}
+
+.contact-list li {
+    margin: 10px 0;
 }
